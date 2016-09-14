@@ -163,10 +163,10 @@ check_ext_pack() {
 
 # Download and install `unar` from Google Code.
 install_unar() {
-    local url="http://theunarchiver.googlecode.com/files/unar1.5.zip"
+    local url="http://unarchiver.c3.cx/downloads/unar1.10.1.zip"
     local archive=`basename "${url}"`
 
-    download "unar" "${url}" "${archive}" "fbf544d1332c481d7d0f4e3433fbe53b"
+    download "unar" "${url}" "${archive}" "ad822c5058bcac87a43c0d286d9f0651"
 
     unzip "${archive}" || fail "Failed to extract ${ievms_home}/${archive} to ${ievms_home}/, unzip command returned error code $?"
 
